@@ -1,3 +1,22 @@
-body {
-    
+#title{
+    text-align: center;
+}
+.color {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 50px;
+    margin-left: 70px;
+
+}
+#black{
+    background-color: black;
+}
+#pink{
+    background-color: rgb(227, 14, 142);
+}
+#purple{
+    background-color: darkorchid;
+}
+#green{
+    background-color: green;
 }
