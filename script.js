@@ -42,16 +42,33 @@ for (index = 0; index < 5; index += 1) {
   fiveLine.classList.add('pixel');
 }
 
-window.onload = function reloadPage() {
-  const firstColor = document.getElementById('black');
-  if (firstColor.classList) {
-    firstColor.classList.add('selected');
-  }
-};
-
-const selected = document.getElementsByClassName('selected');
+/* const selected = document.getElementsByClassName('selected');
 selected.onclick = function click(classe, velha, nova) {
   classe.classList.remove(velha);
   classe.classList.add(nova);
 };
-click(selectColor, selected, );
+click(selectColor, selected); */
+
+function select() {
+  const firstColor = document.getElementById('black');
+  if (firstColor.classList) {
+    firstColor.classList.add('selected');
+  }
+}
+
+function eventsopen() {
+  const buttons = document.getElementsByClassName('color');
+  for (let index = 0; index < buttons.length; index += 1) {
+    // console.log(button[index]);
+    buttons[index].addEventListener('click', function (evt) {
+      const selected = document.getElementsByClassName('selected')[0];
+      selected.classList.remove('selected');
+      evt.target.classList.add('selected');
+    });
+  }
+}
+
+window.onload = () => {
+  select();
+  eventsopen();
+};
