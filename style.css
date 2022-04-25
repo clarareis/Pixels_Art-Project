@@ -1,4 +1,4 @@
-#title{
+body{
     text-align: center;
 }
 
@@ -14,7 +14,8 @@
 } */
 
 .color {
-    font: italic 12pt monospace ;
+    font: italic 12pt monospace;
+    text-align: center;
     display: inline-block;
     border: 1px solid black;
     padding: 50px;

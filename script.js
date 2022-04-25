@@ -43,9 +43,15 @@ for (index = 0; index < 5; index += 1) {
 }
 
 window.onload = function reloadPage() {
-
-  const selectColor = document.getElementById('black');
-
-  if (selectColor.classList)selectColor.classList.add('selected');
-  //else selectColor.className += 'black';
+  const firstColor = document.getElementById('black');
+  if (firstColor.classList) {
+    firstColor.classList.add('selected');
+  }
 };
+
+const selected = document.getElementsByClassName('selected');
+selected.onclick = function click(classe, velha, nova) {
+  classe.classList.remove(velha);
+  classe.classList.add(nova);
+};
+click(selectColor, selected, );
