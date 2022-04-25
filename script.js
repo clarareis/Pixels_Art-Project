@@ -41,3 +41,11 @@ for (index = 0; index < 5; index += 1) {
   elementBox2.appendChild(fiveLine);
   fiveLine.classList.add('pixel');
 }
+
+window.onload = function reloadPage() {
+
+  const selectColor = document.getElementById('black');
+
+  if (selectColor.classList)selectColor.classList.add('selected');
+  //else selectColor.className += 'black';
+};
