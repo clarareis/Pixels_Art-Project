@@ -68,6 +68,16 @@ function eventsopen() {
   }
 }
 
+/* const colorBlack = document.getElementById('black');
+
+paint.addEventListener('click', function(e){
+  const paint = document.getElementsByClassName('selected')[0];
+  e.target.
+})
+console.log(paint); */
+
+// const newTag = document.getclear-board
+
 window.onload = () => {
   select();
   eventsopen();
