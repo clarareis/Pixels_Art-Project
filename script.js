@@ -78,6 +78,15 @@ console.log(paint); */
 
 // const newTag = document.getclear-board
 
+const clearBotton = document.getElementById('clear-board');
+clearBotton.addEventListener('click', function () {
+  const pixels = document.getElementsByClassName('pixel');
+
+  for (let index = 0; index < pixels.length; index += 1) {
+    pixels[index].style.backgroundColor = 'white';
+  }
+});
+
 window.onload = () => {
   select();
   eventsopen();
