@@ -1,4 +1,6 @@
 /* eslint-disable no-undef */
+
+// resolvendo requisito 4
 // criando 5 ul dinamicamente dentro da minha div
 for (index = 0; index < 5; index += 1) {
   const elementBox1 = document.getElementById('pixel-board');
@@ -42,13 +44,7 @@ for (index = 0; index < 5; index += 1) {
   fiveLine.classList.add('pixel');
 }
 
-/* const selected = document.getElementsByClassName('selected');
-selected.onclick = function click(classe, velha, nova) {
-  classe.classList.remove(velha);
-  classe.classList.add(nova);
-};
-click(selectColor, selected); */
-
+// resolvendo requisito 6
 function select() {
   const firstColor = document.getElementById('black');
   if (firstColor.classList) {
@@ -56,6 +52,7 @@ function select() {
   }
 }
 
+// resolvendo requisito 7
 function eventsopen() {
   const buttons = document.getElementsByClassName('color');
   for (let index = 0; index < buttons.length; index += 1) {
@@ -68,16 +65,25 @@ function eventsopen() {
   }
 }
 
-/* const colorBlack = document.getElementById('black');
+// Resolvendo requisito 8
+ const getPixel = document.getElementsByClassName('pixel');
 
-paint.addEventListener('click', function(e){
-  const paint = document.getElementsByClassName('selected')[0];
-  e.target.
-})
-console.log(paint); */
+for (let value = 0; value < getPixel.length; value += 1) {
+  getPixel[value].addEventListener('click', function (event) {
+  let paintPixel = document.getElementsByClassName('selected')[0];
+  console.log(paintPixel);
+  let getStyle = window.getComputedStyle(paintPixel);
+  let paintPixelForBox = getStyle.getPropertyValue('background-color');
+  event.target.style.backgroundColor = paintPixelForBox;
+  })
+ };
+
+
+
 
 // const newTag = document.getclear-board
 
+// Resolvendo requisito 9
 const clearBotton = document.getElementById('clear-board');
 clearBotton.addEventListener('click', function () {
   const pixels = document.getElementsByClassName('pixel');
