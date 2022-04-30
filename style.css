@@ -1,19 +1,10 @@
 body{
     text-align: center;
-    background-color: gray;
+    background-image: url(https://i.pinimg.com/originals/5a/f9/6d/5af96d753e52c379b526b55464f49155.jpg);
+    background-repeat: no-repeat;
+    background-color: rgb(238, 238, 238);
+    
 }
-
-/* .selected {
-    font: italic 12pt monospace ;
-    display: inline-block;
-    border: 1px solid black;
-    padding: 50px;
-    color: white;
-    border-radius: 20%;
-    width: 40px;
-    height: 40px;
-} */
-
 .color {
     font: italic 12pt monospace;
     text-align: center;
@@ -26,10 +17,29 @@ body{
     height: 40px;
 }
 
+.color:hover{
+border: 1px solid whitesmoke;
+}
+
+#clear-board{
+border-radius: 8px;
+font-size: 16px;
+background-color: white;
+border: 2px solid blue;
+box-shadow: 3px 3px rgba(0,0,0,0.2);
+}
+#clear-board:hover{
+        background-color: lightseagreen;
+        color: blue;
+}
+
+#title{
+    color: black;
+}
 .pixel {
     display: inline-block;
     border: 1px solid black;
-    padding: 50px;
+    padding: 8px;
     border-radius: 20%;
     margin-left: 10px;
     background-color: white;
